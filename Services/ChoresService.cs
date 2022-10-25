@@ -37,7 +37,7 @@ public class ChoresService
     return chore;
   }
 
-  internal Chore DeleteChore(string id)
+  public Chore DeleteChore(string id)
   {
     Chore chore = this.GetChore(id);
     _db.Chores.Remove(chore);
